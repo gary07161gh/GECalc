@@ -33,7 +33,7 @@ tasks.withType(JavaCompile) {
 
 tasks.register('testPlugin', JavaExec) {
 	classpath = sourceSets.test.runtimeClasspath
-	main = 'com.gecalc.GECalcPluginTest'
+	mainClass = 'com.gecalc.GECalcPluginTest'
 	enableAssertions = true
 	args = ['--debug', '--developer-mode']
 }
